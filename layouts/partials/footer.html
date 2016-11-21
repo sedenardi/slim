@@ -1,0 +1,13 @@
+</div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="bottomLinks">
+      {{ range .Site.Params.social }}
+        <a class="bottomLink socialImg {{ .type }}" href="{{ .url }}" target="_blank"></a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+</body>
+</html>

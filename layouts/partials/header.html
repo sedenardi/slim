@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>{{ .Site.Title }}</h1>
+      <ul>
+        {{ range .Site.Params.page }}
+          <li><a href="{{ .href }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
