@@ -1,0 +1,19 @@
+{
+  "name": "slim",
+  "version": "1.0.0",
+  "description": "Minimal blog theme for Hugo.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedenardi/slim.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedenardi/slim/issues"
+  },
+  "homepage": "https://github.com/sedenardi/slim#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
