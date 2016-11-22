@@ -71,6 +71,21 @@ body {
     padding-bottom: 1rem;
     line-height: 2rem;
   }
+  img {
+    max-width: 100%;
+    margin: auto;
+  }
+  .paginator {
+    position: relative;
+    .prev {
+      position: absolute;
+      left: 0;
+    }
+    .next {
+      position: absolute;
+      right: 0;
+    }
+  }
 }
 .footer {
   padding: 3rem 0 2rem;
@@ -78,10 +93,10 @@ body {
     text-align: center;
   }
   .bottomLink {
-    padding-right: 2rem;
+    margin-right: 2rem;
   }
   .bottomLink:last-of-type {
-    padding-right: 0;
+    margin-right: 0;
   }
   .socialImg {
     background-size: contain;
