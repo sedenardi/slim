@@ -110,3 +110,16 @@ body {
     background: url('/img/github.svg') no-repeat top left;
   }
 }
+
+@import "pygments-friendly";
+
+.highlight {
+  background: #f0f0f0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  font-size: 0.8rem;
+  pre {
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+}
