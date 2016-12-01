@@ -9,6 +9,9 @@
       {{ if .Site.Params.twitter }}
         <a class="bottomLink socialImg twitter" href="{{ .Site.Params.twitter }}" target="_blank"></a>
       {{ end }}
+      {{ if .Site.Params.email }}
+        <a class="bottomLink socialImg email" href="mailto:{{ .Site.Params.email }}"></a>
+      {{ end }}
     </div>
   </div>
 </div>
