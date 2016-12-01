@@ -36,9 +36,7 @@ body {
 .container {
   padding: 0 1rem;
   margin: auto;
-  @media (min-width: 600px) {
-    max-width: 600px;
-  }
+  max-width: 620px;
 }
 .postTitle h1, h5 {
   margin: 0;
@@ -111,6 +109,11 @@ body {
   }
 }
 
+code {
+  background: #ddd;
+  padding: .1em .2em;
+}
+
 @import "pygments-friendly";
 
 .highlight {
@@ -121,5 +124,9 @@ body {
   pre {
     margin: 0;
     padding: 0.5em 1em;
+  }
+  code {
+    background: initial;
+    padding: initial;
   }
 }
