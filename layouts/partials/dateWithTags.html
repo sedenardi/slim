@@ -1,0 +1,11 @@
+<h5>
+  {{ .Date.Format "Mon, Jan 2, 2006" }}
+  {{ with .Params.tags }}
+  {{ if ge (len .) 1 }}
+    | tags:
+    {{ range . }}
+        <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
+  {{ end}}
+</h5>

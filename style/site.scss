@@ -42,11 +42,10 @@ body {
   margin: 0;
 }
 
-.post {
-  padding-bottom: 2rem;
+.postSummary, .post {
+  padding-bottom: 1rem;
   h1 {
     margin: 0;
-    padding-bottom: 1rem;
     line-height: 2rem;
   }
   h5 {
@@ -60,7 +59,7 @@ body {
     text-decoration: underline;
   }
 }
-.post:last-of-type {
+.postSummary:last-of-type {
   padding-bottom: 0;
 }
 .main {

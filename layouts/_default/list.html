@@ -1,5 +1,8 @@
 {{ partial "header.html" . }}
-  {{- range first 10 .Data.Pages }}
-    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-  {{- end }}
+{{ range sort .Paginator.Pages }}
+  {{- if eq .Type "post" }}
+    {{ partial "postSummary.html" . }}
+  {{ end }}
+{{ end }}
+{{ partial "paginator.html" . }}
 {{ partial "footer.html" . }}

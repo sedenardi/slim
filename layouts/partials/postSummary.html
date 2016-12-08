@@ -1,0 +1,12 @@
+<div class="postSummary">
+  <h1>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}
+  </h1>
+  {{ partial "dateWithTags.html" . }}
+  <p>
+    {{ .Summary | plainify | safeHTML }}
+    {{ if .Truncated }}
+    <a href="{{ .Permalink }}">Read more ></a>
+    {{ end }}
+  </p>
+</div>
